@@ -155,8 +155,8 @@ function App() {
           <div className="video-container">
             <canvas 
               ref={canvasRef}
-              width={540}
-              height={960}
+              width={360}
+              height={640}
               className="video-canvas"
             />
             <VideoRenderer 

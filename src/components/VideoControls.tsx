@@ -38,9 +38,7 @@ export const VideoControls: React.FC<VideoControlsProps> = ({
             '生成视频'
           )}
         </button>
-      </div>
 
-      <div className="control-group">
         <button
           className="control-button"
           onClick={onPlayPause}
@@ -64,9 +62,7 @@ export const VideoControls: React.FC<VideoControlsProps> = ({
           <Square size={20} />
           停止
         </button>
-      </div>
 
-      <div className="control-group">
         <button
           className="control-button success"
           onClick={onDownload}

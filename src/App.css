@@ -164,6 +164,10 @@
   border-radius: 0.5rem;
   overflow: hidden;
   margin-bottom: 1rem;
+  display: flex;
+  justify-content: center;
+  max-width: 480px;
+  margin: 0 auto 1rem auto;
 }
 
 .video-canvas {
@@ -171,6 +175,8 @@
   height: auto;
   display: block;
   border-radius: 0.5rem;
+  max-width: 360px;
+  max-height: 640px;
 }
 
 /* 控制面板样式 */
@@ -184,13 +190,14 @@
   display: flex;
   gap: 0.5rem;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 .control-button {
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  padding: 0.75rem 1.5rem;
+  padding: 0.75rem 1.2rem;
   border: none;
   border-radius: 0.5rem;
   background: rgba(255,255,255,0.2);
@@ -199,6 +206,9 @@
   transition: all 0.2s ease;
   font-size: 0.9rem;
   font-weight: 500;
+  flex: 1;
+  min-width: 100px;
+  max-width: 140px;
 }
 
 .control-button:hover:not(:disabled) {
@@ -350,6 +360,10 @@
   overflow: hidden;
   margin-bottom: 1rem;
   box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+  display: flex;
+  justify-content: center;
+  max-width: 480px;
+  margin: 0 auto 1rem auto;
 }
 
 .video-canvas {
@@ -358,6 +372,8 @@
   display: block;
   border-radius: 0.5rem;
   transition: filter 0.3s ease;
+  max-width: 360px;
+  max-height: 640px;
 }
 
 .video-canvas:hover {
@@ -382,6 +398,16 @@
   .control-button {
     flex: 1;
     min-width: 120px;
+    max-width: none;
+  }
+  
+  .video-container {
+    max-width: 320px;
+  }
+  
+  .video-canvas {
+    max-width: 280px;
+    max-height: 498px;
   }
   
   .status-info {
