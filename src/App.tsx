@@ -5,7 +5,7 @@ import { VideoRenderer } from './components/VideoRenderer'
 import { VideoControls } from './components/VideoControls'
 import { useSharedAudioContext } from './hooks/useSharedAudioContext'
 import './App.css'
-import Audio from './assets/music/111.mp3'
+import Audio from './assets/music/default-beat.mp3'
 interface ImageData {
   file: File
   url: string

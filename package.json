@@ -1,8 +1,9 @@
 {
-  "name": "666",
+  "name": "music-video-creator",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
   "type": "module",
+  "description": "Create videos from images synchronized with music beats",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
